@@ -16,6 +16,7 @@ public class MainController {
         return "index";
     }
     @GetMapping("time")
+    //получение текущей даты
     public String time(Model model){
         String currentTime = LocalDateTime.now().toString();
         model.addAttribute("nowTime", currentTime);
