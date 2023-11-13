@@ -19,7 +19,7 @@ public class MainController {
     //получение текущей даты
     public String time(Model model){
         String currentTime = LocalDateTime.now().toString();
-        model.addAttribute("nowTime", currentTime);
+        model.addAttribute("nowTime", currentTime); //Добавьте предоставленный атрибут под предоставленным именем.
         return "time";
     }
     @GetMapping("info")
